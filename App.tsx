@@ -143,6 +143,7 @@ const Hero = () => (
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-400 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-blue-400 rounded-full blur-[100px]"></div>
     </div>
+<<<<<<< HEAD
     
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
@@ -155,19 +156,36 @@ const Hero = () => (
         Transformo estratégia em operação. Do site à automação, do funil à operação.
       </p>
       
+=======
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
+        Estruture sua operação.<br className="hidden md:block" />
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600">Eficiência, previsibilidade e crescimento.</span>
+      </h1>
+      <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+        A PlusOps organiza atendimento, vendas, retenção e sucesso do cliente para PME e startups B2B. Soluções práticas, tecnologia simples e IA aplicada com governança.
+      </p>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a 
           href="#servicos" 
           onClick={(e) => scrollToSection(e, 'servicos')}
+<<<<<<< HEAD
           className="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
         >
           Ver serviços
+=======
+          className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+        >
+          Agendar diagnóstico (30 min)
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
           <ArrowRight size={20} />
         </a>
         <a 
           href="https://wa.me/5521988551085" 
           target="_blank"
           rel="noopener noreferrer"
+<<<<<<< HEAD
           className="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 border border-slate-200 font-bold rounded-xl hover:border-indigo-600 hover:text-indigo-600 transition-all flex items-center justify-center gap-2"
         >
           <MessageCircle size={20} className="text-green-500" />
@@ -187,6 +205,31 @@ const Hero = () => (
         <div className="flex flex-col items-center">
           <span className="text-2xl font-bold text-slate-800">Execução</span>
           <span className="text-xs uppercase tracking-widest text-slate-500 font-medium">Foco em Resultado</span>
+=======
+          className="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 border border-indigo-600 font-bold rounded-xl hover:bg-indigo-50 hover:text-indigo-700 transition-all flex items-center justify-center gap-2"
+        >
+          <MessageCircle size={20} className="text-green-500" />
+          Fale com a PlusOps
+        </a>
+      </div>
+      <div className="mt-4">
+        <p className="text-xs text-slate-500 font-normal">
+          Experiência em operações reguladas e de grande escala (MetrôRio, GRU Airport, Oi, Contax, Invepar).
+        </p>
+      </div>
+      <div className="mt-20 pt-10 border-t border-slate-200 flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale opacity-60">
+        <div className="flex flex-col items-center">
+          <span className="text-2xl font-bold text-slate-800">20+ Anos</span>
+          <span className="text-xs uppercase tracking-widest text-slate-500 font-medium">Estruturando operações</span>
+        </div>
+        <div className="flex flex-col items-center">
+          <span className="text-2xl font-bold text-slate-800">Controle</span>
+          <span className="text-xs uppercase tracking-widest text-slate-500 font-medium">Previsibilidade</span>
+        </div>
+        <div className="flex flex-col items-center">
+          <span className="text-2xl font-bold text-slate-800">Execução</span>
+          <span className="text-xs uppercase tracking-widest text-slate-500 font-medium">Foco em resultado</span>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
         </div>
       </div>
     </div>
@@ -198,10 +241,17 @@ const ServiceCard = ({ service }: { service: Service }) => (
     <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
       {service.icon}
     </div>
+<<<<<<< HEAD
     <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
     <p className="text-slate-600 mb-6 text-sm leading-relaxed">{service.description}</p>
     
     <div className="space-y-3 mb-8 flex-grow">
+=======
+    <h3 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">{service.title}</h3>
+    <p className="text-base font-normal text-slate-600 mb-6 leading-relaxed">{service.description}</p>
+    
+    <div className="space-y-3 mb-8 flex-grow items-start flex flex-col">
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
       {service.features.map((feature, idx) => (
         <div key={idx} className="flex items-start gap-3 text-sm text-slate-700">
           <CheckCircle2 size={16} className="text-indigo-500 mt-0.5 shrink-0" />
@@ -221,6 +271,7 @@ const Services = () => {
   const services: Service[] = [
     {
       id: 'arch',
+<<<<<<< HEAD
       icon: <Layers size={28} />,
       title: 'Arquitetura de Soluções Digitais',
       description: 'Antes de qualquer código, eu desenho a solução certa para o seu cenário.',
@@ -270,6 +321,61 @@ const Services = () => {
         'MVPs e produtos digitais'
       ],
       result: 'Tecnologia que se adapta ao seu negócio — não o contrário.'
+=======
+      icon: <Layers size={28} />, 
+      title: 'Diagnóstico Operacional',
+      description: 'Analisamos processos, identificamos falhas e entregamos um plano claro para organizar sua operação.',
+      features: [
+        'Mapeamento de atendimento, vendas e retenção',
+        'Identificação de gargalos e riscos',
+        'Plano de ação objetivo',
+        'Foco em eficiência operacional',
+        'Plano estruturado de 30/60/90 dias'
+      ],
+      result: 'Operação mais previsível e controlada.'
+    },
+    {
+      id: 'funnels',
+      icon: <Globe size={28} />, 
+      title: 'Estruturação de Atendimento e Experiência',
+      description: 'Padronizamos fluxos, integramos canais e treinamos equipes para garantir resposta rápida e previsível.',
+      features: [
+        'Fluxos claros de atendimento',
+        'Integração de canais digitais',
+        'Treinamento de equipes',
+        'Monitoramento de experiência do cliente',
+        'Playbook operacional e padrão de atendimento'
+      ],
+      result: 'Atendimento organizado e clientes mais satisfeitos.'
+    },
+    {
+      id: 'ai',
+      icon: <Bot size={28} />, 
+      title: 'Vendas, Retenção e Sucesso do Cliente',
+      description: 'Desenhamos processos de vendas e pós-venda para aumentar conversão, reter clientes e melhorar a experiência.',
+      features: [
+        'Processos de vendas estruturados',
+        'Ações de retenção e fidelização',
+        'Gestão de sucesso do cliente',
+        'Indicadores de resultado',
+        'Estrutura de funil e acompanhamento de saúde do cliente'
+      ],
+      result: 'Mais vendas, menos perda de clientes.'
+    },
+    {
+      id: 'on-demand',
+      icon: <Wrench size={28} />, 
+      title: 'Automação e IA com Governança',
+      description: 'Implantamos automações e IA de forma controlada, sempre com foco em eficiência operacional e resultado financeiro.',
+      features: [
+        'Automação de processos-chave',
+        'IA aplicada com controle',
+        'Governança e acompanhamento',
+        'Soluções sob medida para PME e serviços profissionais',
+        'Automação de triagem, base de conhecimento e relatórios'
+      ],
+      result: 'Tecnologia como ferramenta para eficiência e crescimento.'
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
     }
   ];
 
@@ -299,32 +405,54 @@ const Services = () => {
 const WhyMe = () => (
   <section id="diferenciais" className="py-24 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<<<<<<< HEAD
       <h2 className="text-base font-bold text-indigo-600 uppercase tracking-[0.2em] mb-4">Por que trabalhar comigo</h2>
       <h3 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-16">Diferenciais que fazem diferença</h3>
       
+=======
+      <h2 className="text-xs md:text-sm font-medium tracking-wider uppercase text-indigo-600 mb-4">Por que escolher a PlusOps</h2>
+      <h3 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-16">Diferenciais</h3>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
       <div className="grid md:grid-cols-3 gap-12">
         <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
           <div className="w-12 h-12 bg-indigo-600 text-white rounded-lg flex items-center justify-center mx-auto mb-6">
             <Layers size={24} />
           </div>
+<<<<<<< HEAD
           <h4 className="text-xl font-bold text-slate-900 mb-4">Arquitetura antes da tecnologia</h4>
           <p className="text-slate-600">Eu parto da operação, não do hype. Tecnologia é ferramenta, não fim.</p>
         </div>
         
+=======
+            <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">Experiência comprovada</h4>
+          <p className="text-slate-600">Mais de 20 anos estruturando operações em empresas como MetrôRio, GRU Airport, Oi, Contax e Invepar, com foco em ambientes regulados e atendimento de grande escala.</p>
+        </div>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
         <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
           <div className="w-12 h-12 bg-indigo-600 text-white rounded-lg flex items-center justify-center mx-auto mb-6">
             <TrendingUp size={24} />
           </div>
+<<<<<<< HEAD
           <h4 className="text-xl font-bold text-slate-900 mb-4">Visão de venda e CX</h4>
           <p className="text-slate-600">Tudo é pensado para gerar valor e conversão. +20 anos liderando CX/CS.</p>
         </div>
         
+=======
+            <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">Foco em controle e resultado</h4>
+          <p className="text-slate-600">Processos organizados, previsibilidade e eficiência operacional para PME e startups.</p>
+        </div>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
         <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
           <div className="w-12 h-12 bg-indigo-600 text-white rounded-lg flex items-center justify-center mx-auto mb-6">
             <ShieldCheck size={24} />
           </div>
+<<<<<<< HEAD
           <h4 className="text-xl font-bold text-slate-900 mb-4">IA com controle e auditoria</h4>
           <p className="text-slate-600">Sem surpresas ou improviso. Custo previsível e execução consistente.</p>
+=======
+            <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">Tecnologia e IA como ferramentas</h4>
+          <p className="text-slate-600">Automação e IA aplicadas com governança, sempre para apoiar o crescimento sustentável.</p>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
         </div>
       </div>
     </div>
@@ -335,14 +463,21 @@ const WorkMethod = () => (
   <section id="metodo" className="py-24 bg-slate-900 text-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
+<<<<<<< HEAD
         <h2 className="text-base font-bold text-indigo-400 uppercase tracking-[0.2em] mb-4">Como eu trabalho</h2>
         <h3 className="text-3xl md:text-5xl font-extrabold mb-6">Da estratégia à operação</h3>
       </div>
       
+=======
+        <h2 className="text-xs md:text-sm font-medium tracking-wider uppercase text-indigo-400 mb-4">Como trabalhamos</h2>
+        <h3 className="text-3xl md:text-4xl font-semibold mb-16">Do diagnóstico ao resultado</h3>
+      </div>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
       <div className="grid md:grid-cols-3 gap-8 relative">
         {[
           {
             step: "01",
+<<<<<<< HEAD
             title: "Diagnóstico claro",
             desc: "Entendo o problema antes de sugerir qualquer tecnologia."
           },
@@ -355,12 +490,31 @@ const WorkMethod = () => (
             step: "03",
             title: "Implementação e Operação",
             desc: "Entrega funcionando, pronta para evoluir no dia a dia."
+=======
+            title: "Diagnóstico objetivo",
+            desc: "Análise prática dos processos e identificação dos principais pontos de melhoria.\n\nVocê recebe: mapa de processos, prioridades e plano de ação."
+          },
+          {
+            step: "02",
+            title: "Estruturação e implantação",
+            desc: "Organização dos fluxos, implantação de soluções e treinamento do time.\n\nVocê recebe: fluxos organizados, playbooks e treinamento aplicado."
+          },
+          {
+            step: "03",
+            title: "Acompanhamento e ajuste",
+            desc: "Monitoramento dos resultados e ajustes para garantir eficiência e previsibilidade.\n\nVocê recebe: métricas, rotina de acompanhamento e ajustes contínuos."
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
           }
         ].map((item, idx) => (
           <div key={idx} className="bg-slate-800 p-10 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-all group">
             <span className="text-5xl font-black text-slate-700 group-hover:text-indigo-500/30 transition-colors mb-6 block">{item.step}</span>
+<<<<<<< HEAD
             <h4 className="text-xl font-bold mb-4">{item.title}</h4>
             <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+=======
+              <h4 className="text-xl md:text-2xl font-semibold mb-4">{item.title}</h4>
+            <p className="text-slate-400 text-base font-normal leading-relaxed" style={{whiteSpace: 'pre-line'}}>{item.desc}</p>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
           </div>
         ))}
       </div>
@@ -400,8 +554,13 @@ const PortfolioCard = ({ project }: { project: Project }) => {
             </span>
           ))}
         </div>
+<<<<<<< HEAD
         <h4 className="text-2xl font-bold text-slate-900 mb-3">{project.title}</h4>
         <p className="text-slate-600 text-sm leading-relaxed">{project.description}</p>
+=======
+          <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mb-3">{project.title}</h4>
+        <p className="text-base font-normal text-slate-600 leading-relaxed">{project.description}</p>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
       </div>
     </div>
   );
@@ -410,7 +569,11 @@ const PortfolioCard = ({ project }: { project: Project }) => {
 const Portfolio = () => {
   const projects: Project[] = [
     {
+<<<<<<< HEAD
       title: "BRO.est",
+=======
+      title: "BRO.ext",
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
       description: "Plataforma de governança operacional e controle de CMV, com foco em dados, rotina e resultado.",
       url: "https://broai-saas.vercel.app/",
       tags: ["Arquitetura", "SaaS", "Hospitalidade"],
@@ -431,10 +594,16 @@ const Portfolio = () => {
     <section id="portfolio" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
+<<<<<<< HEAD
           <h2 className="text-base font-bold text-indigo-600 uppercase tracking-[0.2em] mb-4">Soluções desenvolvidas</h2>
           <h3 className="text-3xl md:text-5xl font-extrabold text-slate-900">Laboratórios de arquitetura e IA</h3>
         </div>
         
+=======
+          <h2 className="text-xs md:text-sm font-medium tracking-wider uppercase text-indigo-600 mb-4">Soluções e Laboratórios</h2>
+          <h3 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-16">Modelos prontos, automação e IA aplicada</h3>
+        </div>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {projects.map((p, idx) => (
             <PortfolioCard key={idx} project={p} />
@@ -448,6 +617,7 @@ const Portfolio = () => {
 const TargetAudience = () => (
   <section className="py-24 bg-white border-y border-slate-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<<<<<<< HEAD
       <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-12">Para quem é</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
@@ -455,6 +625,15 @@ const TargetAudience = () => (
           "Negócios que já tentaram automação ou IA e se frustraram",
           "Fundadores e gestores que valorizam execução e resultado",
           "Times que precisam transformar processos em sistemas"
+=======
+      <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-12">Para quem é</h2>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          "PME e startups B2B que cresceram e perderam organização",
+          "Empresas com atendimento desestruturado ou ineficiente",
+          "Negócios que perdem clientes por falhas de processo",
+          "Quem já tentou automação sem método e busca previsibilidade"
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
         ].map((text, idx) => (
           <div key={idx} className="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex items-center justify-center text-center h-full">
             <p className="text-slate-700 font-semibold text-sm leading-snug">{text}</p>
@@ -465,6 +644,7 @@ const TargetAudience = () => (
   </section>
 );
 
+<<<<<<< HEAD
 const Footer = () => (
   <footer className="bg-slate-50 border-t border-slate-200 py-16">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -498,6 +678,50 @@ const Footer = () => (
       <p className="text-slate-400 text-xs">
         © {new Date().getFullYear()} PlusOps • Todos os direitos reservados.
       </p>
+=======
+// Parágrafo institucional SEO antes do Footer
+const SeoInstitutional = () => (
+  <section className="bg-white border-t border-slate-100 py-8">
+    <div className="max-w-4xl mx-auto px-4 text-center">
+      <p className="text-slate-700 text-base md:text-lg font-normal leading-relaxed">
+        A PlusOps atua na estruturação operacional de PME e startups B2B, organizando atendimento, vendas e retenção com processos claros, governança e tecnologia aplicada. Com mais de 20 anos de experiência em ambientes regulados e operações complexas, apoiamos empresas que precisam ganhar previsibilidade, eficiência e controle.
+      </p>
+    </div>
+  </section>
+);
+
+const Footer = () => (
+  <footer className="bg-slate-50 border-t border-slate-200 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        {/* Coluna 1 – Marca */}
+        <div className="flex flex-col items-start md:items-start">
+          <span className="text-2xl font-black tracking-tight text-slate-900 mb-2">
+            PLUS<span className="text-indigo-600">OPS</span>
+          </span>
+          <p className="text-slate-500 text-sm">
+            Estruturação operacional, experiência do cliente e tecnologia aplicada para PME e startups B2B.
+          </p>
+        </div>
+        {/* Coluna 2 – Contato */}
+        <div className="flex flex-col items-start md:items-start">
+          <p className="text-slate-500 text-sm mb-1">Rio de Janeiro – RJ – Brasil</p>
+          <p className="text-slate-500 text-sm mb-1">CNPJ: 65.086.428/0001-44</p>
+          <a href="mailto:contato@plusopsconsult.com" className="text-slate-500 text-sm mb-1 hover:text-indigo-600 transition-colors">contato@plusopsconsult.com</a>
+          <p className="text-slate-500 text-sm mb-1">(21) 98855-1085</p>
+        </div>
+        {/* Coluna 3 – Links institucionais */}
+        <div className="flex flex-col items-start md:items-start">
+          <a href="#" className="text-xs font-medium text-slate-500 hover:text-indigo-600 underline underline-offset-2 transition-colors mb-1">Política de Privacidade</a>
+          <a href="#" className="text-xs font-medium text-slate-500 hover:text-indigo-600 underline underline-offset-2 transition-colors mb-1">Termos de Uso</a>
+        </div>
+      </div>
+      <div className="text-center mt-8">
+        <p className="text-slate-400 text-xs">
+          © 2026 PlusOps. Todos os direitos reservados.
+        </p>
+      </div>
+>>>>>>> d89a5bc (Identidade visual institucional unificada, CTA WhatsApp, checklist estratégico e Google Analytics (gtag.js) inserido)
     </div>
   </footer>
 );
@@ -514,6 +738,28 @@ export default function App() {
         <Portfolio />
         <TargetAudience />
       </main>
+      {/* Bloco institucional unificado */}
+      <section className="w-full bg-slate-50 border-t border-slate-200 py-20 mt-24">
+        <div className="max-w-4xl mx-auto px-4 flex flex-col items-center text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Quem está por trás da PlusOps</h2>
+          <p className="text-xl font-semibold text-indigo-700 mb-1">Jadson Campos</p>
+          <p className="text-base text-slate-700 mb-4 max-w-2xl">+20 anos estruturando operações críticas em ambientes regulados e de grande escala. Experiência em atendimento, governança operacional e transformação de processos em empresas como MetrôRio, GRU Airport, Oi, Contax e Invepar.</p>
+          <a href="https://wa.me/5521988551085" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 transition-all mb-10 text-base">
+            <MessageCircle size={20} /> Fale direto no WhatsApp
+          </a>
+          <div className="w-full max-w-2xl bg-white border border-slate-100 rounded-2xl shadow-md p-8 mb-6">
+            <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-6">Sinais de que sua operação precisa de estrutura</h3>
+            <ul className="text-left space-y-3 mb-4">
+              <li className="flex items-center text-slate-700 text-base"><CheckCircle2 className="text-indigo-500 mr-3" size={20}/>Atendimento inconsistente</li>
+              <li className="flex items-center text-slate-700 text-base"><CheckCircle2 className="text-indigo-500 mr-3" size={20}/>Perda de clientes por falhas de processo</li>
+              <li className="flex items-center text-slate-700 text-base"><CheckCircle2 className="text-indigo-500 mr-3" size={20}/>Retrabalho constante</li>
+              <li className="flex items-center text-slate-700 text-base"><CheckCircle2 className="text-indigo-500 mr-3" size={20}/>Falta de indicadores claros</li>
+            </ul>
+            <p className="text-slate-500 text-sm text-center">Se você marcou dois ou mais pontos, sua operação está operando abaixo do potencial.</p>
+          </div>
+          <p className="text-slate-600 text-base max-w-2xl">A PlusOps atua na estruturação operacional de PME e startups B2B, organizando atendimento, vendas e retenção com processos claros, governança e tecnologia aplicada. Com mais de 20 anos de experiência em ambientes regulados e operações complexas, apoiamos empresas que precisam ganhar previsibilidade, eficiência e controle.</p>
+        </div>
+      </section>
       <Footer />
     </div>
   );
