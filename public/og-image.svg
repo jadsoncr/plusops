@@ -13,6 +13,6 @@
   <rect width="1200" height="630" fill="url(#g)" />
   <g transform="translate(80,160)">
     <text class="title">Plus<span style="fill:#f97316">Ops</span></text>
-    <text class="subtitle" y="72">Consultoria em CX & Operações · Redução de churn</text>
+    <text class="subtitle" y="72">Consultoria em CX &amp; Operações · Redução de churn</text>
   </g>
 </svg>
