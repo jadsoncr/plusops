@@ -482,6 +482,9 @@ export default function App() {
                     src="https://media.licdn.com/dms/image/v2/D4D03AQFp_UbUrwcM0w/profile-displayphoto-shrink_400_400/B4DZT1mXMKG4Ag-/0/1739287264702?e=1773878400&v=beta&t=R9Cp-GVGxvq690HaOQog1vU3SQuH1F8FMmGrkvYYY7M" 
                     alt="Jadson Campos" 
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    width={320}
+                    height={320}
                     referrerPolicy="no-referrer"
                   />
                 </div>
