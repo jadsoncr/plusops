@@ -1,68 +1,56 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@theme {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  
+  --color-navy: #0D1F35;
+  --color-navy-light: #142944;
+  --color-blue: #1B6CA8;
+  --color-blue-light: #2484CC;
+  --color-orange: #F47B20;
+  --color-orange-light: #FF9A42;
+  --color-cream: #F5F2ED;
+  --color-gray-text: #6B7A8D;
+  --color-lgray: #EEF1F5;
+  --color-navy-text: #1A2535;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  body {
+    @apply bg-cream text-navy-text font-body antialiased;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+/* Custom Utilities from the attachment */
+.hero-bg {
+  @apply absolute inset-0;
+  background:
+    radial-gradient(ellipse 60% 50% at 70% 40%, rgba(27,108,168,0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(244,123,32,0.08) 0%, transparent 60%);
+}
+
+.hero-grid-lines {
+  @apply absolute inset-0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.glass-card {
+  @apply bg-white/5 border border-white/10 backdrop-blur-sm;
+}
+
+.product-card-gradient {
+  background: linear-gradient(135deg, transparent 60%, rgba(244,123,32,0.04));
+}
+
+.product-result-gradient {
+  background: linear-gradient(135deg, #EAF4E8, #D6EDDF);
+}
+
+.results-cta-gradient {
+  background: radial-gradient(circle, rgba(244,123,32,0.08) 0%, transparent 70%);
 }

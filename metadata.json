@@ -1,9 +1,5 @@
-
 {
-  "name": "PlusOps - Arquitetura de Soluções & IA",
-  "description": "PlusOps: A solução inteligente para a sua operação. Especialista em arquitetura de soluções digitais e IA aplicada para negócios reais por Jadson Campos.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
+  "name": "PlusOps - Consultoria em CX & Operações",
+  "description": "Consultoria especializada em estruturação de operações críticas, redução de churn e melhoria de NPS.",
+  "requestFramePermissions": []
 }
