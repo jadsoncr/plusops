@@ -1,0 +1,6 @@
+<svg width="600" height="900" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <rect width="600" height="900" fill="#f8fafc" rx="12" />
+  <rect x="40" y="60" width="520" height="360" fill="#fff" rx="10" stroke="#e6edf3" />
+  <text x="60" y="180" fill="#0f172a" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">DUUS</text>
+  <text x="60" y="220" fill="#475569" font-family="Inter, system-ui, sans-serif" font-size="14">Produto autoral com agentes de IA.</text>
+</svg>
