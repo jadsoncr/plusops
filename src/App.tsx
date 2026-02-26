@@ -149,7 +149,7 @@ export default function App() {
                   overflow: 'hidden'
                 }}
               >
-                Seu cliente está indo embora. Você sabe <em className="not-italic text-orange relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[3px] after:bg-orange/40 after:rounded-sm">exatamente</em onde está o buraco?
+                Seu cliente está indo embora. Você sabe <em className="not-italic text-orange">exatamente</em> onde está o buraco?
               </h1>
             </Reveal>
             
