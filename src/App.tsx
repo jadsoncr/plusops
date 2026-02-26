@@ -141,8 +141,7 @@ export default function App() {
             
             <Reveal>
               <h1 className="font-display text-5xl md:text-6xl font-extrabold text-white leading-[1.1] tracking-tight mb-5">
-                Seu cliente está<br/>
-                indo embora.<br/>
+                Seu cliente está indo embora.<br/>
                 Você sabe <em className="not-italic text-orange relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[3px] after:bg-orange/40 after:rounded-sm">exatamente</em><br/>
                 onde está o buraco?
               </h1>
@@ -275,10 +274,10 @@ export default function App() {
                 <div className={`absolute top-0 left-0 right-0 h-[3px] transition-transform origin-left scale-x-0 group-hover:scale-x-100 ${item.color}`} />
                 <div className="font-display font-extrabold text-5xl text-lgray leading-none mb-4 tracking-tight group-hover:text-cream transition-colors">{item.num}</div>
                 <h3 className="font-display font-bold text-xl text-navy leading-snug mb-3 tracking-normal">{item.title}</h3>
-                <p className="text-navy-text/80 leading-relaxed mb-5 font-light">{item.body}</p>
+                <p className="text-navy-text/80 leading-relaxed mb-5 font-light" style={{marginBottom: '1.5rem'}}>{item.body}</p>
                 <div className="pt-5 border-t border-lgray">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-[#7A8699] mb-2.5 block">Você está vivendo isso se:</span>
-                  <ul className="space-y-2">
+                  <ul className="space-y-4">
                     {item.symptoms.map((s, sIdx) => (
                       <li key={sIdx} className="text-sm text-navy-text flex items-start gap-2 leading-normal">
                         <span className="text-orange font-bold shrink-0 mt-0.5">→</span>
@@ -302,7 +301,7 @@ export default function App() {
             <p className="text-lg text-white/70 max-w-[560px] leading-relaxed mb-14 font-light">Não chego com PowerPoint pronto. Começo ouvindo e entendendo o que está acontecendo de verdade. Só então monto o caminho.</p>
           </Reveal>
 
-          <div className="grid md:grid-cols-3 gap-px bg-white/10 relative">
+          <div className="grid md:grid-cols-3 gap-8 bg-white/10 relative">
             <div className="absolute top-9 left-[16.66%] right-[16.66%] h-px bg-white/10 hidden md:block" />
             {[
               {
@@ -499,13 +498,27 @@ export default function App() {
                 <h2 className="font-display font-extrabold text-3xl text-white mb-1 tracking-tight">Jadson Campos</h2>
                 <div className="text-orange text-xs font-bold tracking-widest uppercase mb-6">Fundador da PlusOps · Consultor de CX & Operações</div>
                 <p className="text-white/85 text-sm leading-relaxed mb-6 font-light">
-                  +20 anos liderando operações de alta criticidade em setores onde a falha não é uma opção. 
-                  Especialista em transformar ambientes complexos — de infraestrutura a redes hospitalares — 
-                  em operações fluidas e previsíveis. Minha entrega foca em blindar a experiência do cliente 
-                  através de processos robustos que garantem eficiência operacional e resultados sólidos no P&L.
+                  Jadson Campos
+
+                  Mais de 20 anos liderando operações de atendimento em setores onde a falha custa caro e a previsibilidade é inegociável. Atuei em infraestrutura, saúde suplementar e telecomunicações — ambientes regulados com alta exposição ao cliente e zero margem para improviso.
+
+                  Minha especialidade é transformar operações complexas em sistemas fluidos e mensuráveis: processos claros, indicadores que geram decisão e tecnologia aplicada com responsabilidade. Não chego com framework genérico — chego com o que funciona em campo.
+
+                  Já reduzi em 3x o volume de reclamações no MetrôRio junto à AGETRANSP, estruturei o atendimento do GRU Airport com NPS acima de 9 perante a ANAC, e implantei Salesforce e NICE na Rede D'Or São Luiz com impacto direto na redução de backlog e melhoria de margem operacional.
+
+                  Se a sua operação enfrenta churn crescente, reclamações que se repetem ou reputação em risco no Reclame Aqui, PROCON ou órgão regulador — o problema quase nunca está no produto. Está em como o atendimento foi estruturado.
+
+                  A PlusOps existe para resolver exatamente isso: diagnóstico real, arquitetura operacional sob medida e resultado que aparece no P&L — não só no relatório.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["Rede D'Or", "GRU Airport", "MetrôRio", "INVEPAR", "Oi/Telemar"].map(c => (
+                  {[
+                    "MetrôRio",
+                    "GRU Airport",
+                    "Oi",
+                    "Contax",
+                    "Invepar",
+                    "Rede D'Or São Luiz",
+                  ].map(c => (
                     <span key={c} className="bg-white/5 border border-white/10 text-white/70 text-[10px] font-medium px-2.5 py-1 rounded-sm">{c}</span>
                   ))}
                 </div>
@@ -516,7 +529,7 @@ export default function App() {
           <div className="flex flex-col">
             <Reveal direction="right">
               <span className="text-xs font-bold uppercase tracking-widest text-orange mb-3.5 block">Por que a PlusOps</span>
-              <h2 className="font-display font-extrabold text-4xl text-navy leading-tight tracking-tight mb-8">Expertise Executiva.<br/>Práticas de Mercado.</h2>
+              <h2 className="font-display font-extrabold text-4xl text-navy leading-tight tracking-tight mb-8">Não trago teoria.<br/>Trago o que funcionou.</h2>
               <p className="text-lg text-[#3D4F63] leading-relaxed mb-8 font-light">Unindo anos de expertise em operações críticas às práticas atuais de mercado para entregar soluções eficientes e resultados mensuráveis.</p>
               
               <div className="space-y-4">
