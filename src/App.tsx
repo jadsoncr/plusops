@@ -140,10 +140,16 @@ export default function App() {
             </div>
             
             <Reveal>
-              <h1 className="font-display text-5xl md:text-6xl font-extrabold text-white leading-[1.1] tracking-tight mb-5">
-                Seu cliente está indo embora.<br/>
-                Você sabe <em className="not-italic text-orange relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[3px] after:bg-orange/40 after:rounded-sm">exatamente</em><br/>
-                onde está o buraco?
+              <h1
+                className="font-display text-5xl md:text-6xl font-extrabold text-white leading-[1.1] tracking-tight mb-5"
+                style={{
+                  display: '-webkit-box',
+                  WebkitLineClamp: 3,
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden'
+                }}
+              >
+                Seu cliente está indo embora. Você sabe <em className="not-italic text-orange relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[3px] after:bg-orange/40 after:rounded-sm">exatamente</em onde está o buraco?
               </h1>
             </Reveal>
             
