@@ -86,7 +86,7 @@ const ContactForm: React.FC = () => {
               autoComplete="organization"
             />
             <textarea
-              className="bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-h-[100px]"
+              className="bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-h-25"
               name="message"
               placeholder="Como podemos ajudar?"
               value={form.message}

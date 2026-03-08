@@ -5,9 +5,13 @@ const PainPoints: React.FC = () => (
   <section id="dores" className="py-12 sm:py-16 lg:py-20 bg-slate-900 text-white">
     <div className="section-inner">
       <div className="text-center mb-12 sm:mb-16">
-        <h2 className="text-xs sm:text-sm font-medium tracking-wider uppercase text-indigo-400 mb-3 sm:mb-4">Problemas Executivos</h2>
-        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8">Se Você Reconhece Estes Desafios, Está no Momento Certo</h3>
-        <p className="text-slate-400 max-w-3xl mx-auto text-base sm:text-lg font-normal">CEOs e diretores de PME B2B enfrentam diariamente estes gargalos que impactam diretamente o crescimento sustentável e a rentabilidade.</p>
+        <h2 className="text-xs sm:text-sm font-medium tracking-wider uppercase text-indigo-400 mb-3 sm:mb-4">Quando a empresa cresce, a operação precisa acompanhar</h2>
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8">Problemas que resolvemos</h3>
+        <p className="text-slate-400 max-w-3xl mx-auto text-base sm:text-lg font-normal">
+          Muitas empresas conseguem vender bem, mas enfrentam dificuldades na operação.<br />
+          Cancelamentos de clientes, reclamações, atendimento sobrecarregado e processos desorganizados são sinais de que a estrutura da empresa precisa evoluir.<br />
+          A PlusOps atua organizando a operação para permitir crescimento sustentável.
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {[
