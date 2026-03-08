@@ -19,6 +19,7 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import LeadForm from './components/LeadForm';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -220,6 +221,11 @@ export default function App() {
             </Reveal>
           </div>
         </div>
+        <section id="pre-analise" className="py-16 sm:py-20 lg:py-28 bg-slate-50">
+          <div className="section-inner">
+            <LeadForm />
+          </div>
+        </section>
       </section>
 
       {/* Recognition Section */}

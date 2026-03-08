@@ -37,9 +37,9 @@ interface PortfolioCardProps {
 const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
   const [error, setError] = useState(false);
   return (
-    <div className={`${project.aspectRatio === 'desktop' ? 'bg-gradient-to-r from-indigo-500 to-blue-500 text-white' : 'bg-white'} rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col h-full animate-slide-up card-hover relative` }>
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-      <div className={`relative overflow-hidden ${project.aspectRatio === 'mobile' ? 'aspect-[9/16] max-w-[280px] mx-auto my-4 rounded-xl shadow-lg' : 'aspect-video'}`}>
+    <div className={`${project.aspectRatio === 'desktop' ? 'bg-linear-to-r from-indigo-500 to-blue-500 text-white' : 'bg-white'} rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col h-full animate-slide-up card-hover relative` }>
+      <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-indigo-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+      <div className={`relative overflow-hidden ${project.aspectRatio === 'mobile' ? 'aspect-9/16 max-w-70 mx-auto my-4 rounded-xl shadow-lg' : 'aspect-video'}`}>
         <img
           src={error ? `https://via.placeholder.com/800x450/4f46e5/ffffff?text=${project.title}` : project.image}
           alt={project.title}
@@ -62,7 +62,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ project }) => {
           </a>
         </div>
       </div>
-      <div className={`p-8 flex-grow ${project.aspectRatio === 'desktop' ? 'text-white text-center md:text-left' : 'text-center md:text-left'}`}>
+      <div className={`p-8 grow ${project.aspectRatio === 'desktop' ? 'text-white text-center md:text-left' : 'text-center md:text-left'}`}>
         <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
           {project.tags.map((tag) => (
             <span

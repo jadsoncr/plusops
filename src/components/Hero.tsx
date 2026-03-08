@@ -19,7 +19,7 @@ const scrollToSection = (
 const Hero: React.FC = () => (
   <section id="top" className="relative pt-32 pb-24 sm:pt-36 sm:pb-28 lg:pt-40 lg:pb-32 overflow-hidden animate-fade-in">
     {/* Precise background blobs (SVG) placed for stable rendering) */}
-    <svg className="absolute -top-10 -left-8 w-[560px] h-[560px] -z-20 pointer-events-none opacity-30" viewBox="0 0 560 560" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <svg className="absolute -top-10 -left-8 w-140 h-140 -z-20 pointer-events-none opacity-30" viewBox="0 0 560 560" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
       <defs>
         <filter id="b" x="0" y="0" width="100%" height="100%">
           <feGaussianBlur stdDeviation="60" result="blur" />
@@ -27,7 +27,7 @@ const Hero: React.FC = () => (
       </defs>
       <circle cx="280" cy="280" r="200" fill="#4f46e5" filter="url(#b)" />
     </svg>
-    <svg className="absolute -bottom-16 -right-8 w-[420px] h-[420px] -z-20 pointer-events-none opacity-20" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <svg className="absolute -bottom-16 -right-8 w-105 h-105 -z-20 pointer-events-none opacity-20" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
       <defs>
         <filter id="c" x="0" y="0" width="100%" height="100%">
           <feGaussianBlur stdDeviation="50" result="blur" />
@@ -38,14 +38,14 @@ const Hero: React.FC = () => (
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero-xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 sm:mb-6">
-        Consultoria Operacional B2B Premium:<br className="hidden sm:block" />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-plus-indigo to-blue-500">
-          Reduza Churn 40%, Aumente Eficiência 60%
+        Seu cliente está indo embora.<br className="hidden sm:block" />
+        <span className="text-transparent bg-clip-text bg-linear-to-r from-plus-indigo to-blue-500">
+          Você sabe exatamente onde está o buraco?
         </span>
       </h1>
       <p className="text-base sm:text-lg lg:text-xl text-slate-700 max-w-4xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4 sm:px-0">
-        Especialista em estruturação operacional B2B, jornada do cliente B2B e IA aplicada com governança. 
-        Transformamos operações caóticas em máquinas de crescimento sustentável. Para CEOs e diretores que precisam de resultados executivos, não promessas vazias.
+        Cancelamentos, reclamações e atendimento sobrecarregado normalmente são sintomas de uma operação que não acompanhou o crescimento da empresa.<br />
+        A PlusOps ajuda empresas a estruturar processos, atendimento e experiência do cliente para crescer com previsibilidade.
       </p>
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0">
         <a

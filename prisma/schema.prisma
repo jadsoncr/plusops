@@ -1,0 +1,14 @@
+// Prisma schema para tabela leads
+model Lead {
+  id           Int      @id @default(autoincrement())
+  nome         String
+  empresa      String
+  email        String
+  telefone     String
+  faturamento  String
+  colaboradores String
+  desafio      String
+  mensagem     String?
+  ip           String?
+  createdAt    DateTime @default(now())
+}
